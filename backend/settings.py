@@ -240,5 +240,6 @@ PASSWORD_RESET_TIMEOUT = 60 * 30  # 30 minutes
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
-    'https://bitebox.live'
+    'https://bitebox.live',
+    "https://www.bitebox.live",
 ]
