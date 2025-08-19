@@ -2,7 +2,16 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
+from django.http import JsonResponse
+
+
+def healthcheck(request):
+    return JsonResponse({"status": "ok"})
+
+
+   
 urlpatterns = [
+    path("", healthcheck),
     path('admin/', admin.site.urls),
     path('api/user/', include('account.urls')),
     path('api/restaurant/', include('restaurants.urls')),
