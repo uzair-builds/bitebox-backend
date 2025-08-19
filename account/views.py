@@ -40,7 +40,7 @@ class UserRegistrationView(APIView):
         uid = urlsafe_base64_encode(force_bytes(user.pk))
         token = account_activation_token.make_token(user)
         # activation_link = f"https://bitebox.live/activate/{uid}/{token}"
-        activation_link = f"http://localhost:3000/activate/{uid}/{token}"
+        activation_link = f"http://bitebox.live/activate/{uid}/{token}"
         print(activation_link)
 
         # Send activation email

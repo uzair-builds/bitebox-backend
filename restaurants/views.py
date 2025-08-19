@@ -184,7 +184,7 @@ class OrderDetailAPIView(generics.RetrieveUpdateAPIView):
 
                 # Create tracking URL
                 # tracking_url = f"https://bitebox.live/rider/tracking/{order.oid}/{order.tracking_token}/"
-                tracking_url = f"http://localhost:3000/rider/tracking/{order.oid}/{order.tracking_token}/"
+                tracking_url = f"http://bitebox.live/rider/tracking/{order.oid}/{order.tracking_token}/"
 
                 # Get all active delivery boys
                 restaurant = order.restaurant.first()  # Assuming one restaurant per order
