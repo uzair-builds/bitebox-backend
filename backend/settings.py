@@ -74,6 +74,8 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+CSRF_TRUSTED_ORIGINS = ['https://bitebox-backend-production.up.railway.app']
+
 ROOT_URLCONF = 'backend.urls'
 
 TEMPLATES = [
