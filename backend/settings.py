@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'customers',
     'channels',
     'tracking',
-    # 'whitenoise.runserver_nostatic',  # Add this line
+    'whitenoise.runserver_nostatic',  # Add this line
 ]
 
 ASGI_APPLICATION = "backend.asgi.application"
@@ -66,7 +66,7 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'corsheaders.middleware.CorsMiddleware',
-    # 'whitenoise.middleware.WhiteNoiseMiddleware',  # Add this line
+    'whitenoise.middleware.WhiteNoiseMiddleware',  # Add this line
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',

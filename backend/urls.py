@@ -12,7 +12,7 @@ def healthcheck(request):
    
 urlpatterns = [
     path("", healthcheck),
-    path('admin/', admin.site.urls),
+    path('AAU/', admin.site.urls),
     path('api/user/', include('account.urls')),
     path('api/restaurant/', include('restaurants.urls')),
     path('auth/', include('rest_framework.urls')),
